@@ -49,7 +49,7 @@
 <v t="leo.20170930131633.1"><vh>@edit 啟動LED.md</vh></v>
 <v t="leo.20170930132614.1"><vh>@edit 按鈕控制.md</vh></v>
 <v t="leo.20170930133219.1"><vh>@edit 呼吸燈.md</vh></v>
-<v t="leo.20170930133618.1"><vh>@edit 可變電阻.md</vh></v>
+<v t="leo.20170930133618.1"><vh>@edit 使用可變電阻.md</vh></v>
 <v t="leo.20170930134243.1"><vh>@edit 三段直流馬達.md</vh></v>
 <v t="leo.20170930134754.1"><vh>@edit 電阻.md</vh></v>
 <v t="leo.20170930135316.1"><vh>@edit LED.md</vh></v>
@@ -61,6 +61,8 @@
 <v t="leo.20170930143321.1"><vh>@edit 啟動七段顯示器.md</vh></v>
 <v t="leo.20170930143328.1"><vh>@edit 使用光敏電阻.md</vh></v>
 <v t="leo.20170930143337.1"><vh>@edit 電子學小考.md</vh></v>
+<v t="leo.20170930151928.1"><vh>@edit 可變電阻.md</vh></v>
+<v t="leo.20170930151934.1"><vh>@edit 電子學期末報告.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
