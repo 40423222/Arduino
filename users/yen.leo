@@ -54,6 +54,8 @@
 <v t="leo.20170930134754.1"><vh>@edit 電阻.md</vh></v>
 <v t="leo.20170930135316.1"><vh>@edit LED.md</vh></v>
 <v t="leo.20170930135325.1"><vh>@edit 按鈕.md</vh></v>
+<v t="leo.20170930140534.1"><vh>@edit IC 7447.md</vh></v>
+<v t="leo.20170930140542.1"><vh>@edit 七段顯示器.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>

@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>LED 燈 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
+    <title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,21 +10,15 @@
 
 
 
-<link rel="canonical" href="./LED.html">
+<link rel="canonical" href=".">
+        <meta name="author" content="KMOL" />
 
-        <meta name="author" content="40423222" />
-        <meta name="keywords" content="Arduino_part" />
-        <meta name="description" content="以下為LED的解說" />
-
+    <!-- Open Graph tags -->
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (虎尾科大MDE)" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="LED 燈"/>
-        <meta property="og:url" content="./LED.html"/>
-        <meta property="og:description" content="以下為LED的解說"/>
-        <meta property="article:published_time" content="2017-09-30" />
-            <meta property="article:section" content="Arduino" />
-            <meta property="article:tag" content="Arduino_part" />
-            <meta property="article:author" content="40423222" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="2017Spring 協同產品設計實習 (虎尾科大MDE)"/>
+        <meta property="og:url" content="."/>
+        <meta property="og:description" content="2017Spring 協同產品設計實習 (虎尾科大MDE)"/>
 
 
     <!-- Bootstrap -->
@@ -105,7 +99,7 @@
                          <li><a href="./pages/about/">
                              About
                           </a></li>
-                        <li class="active">
+                        <li >
                             <a href="./category/arduino.html">Arduino</a>
                         </li>
             </ul>
@@ -127,69 +121,24 @@
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="./LED.html"
-                       rel="bookmark"
-                       title="Permalink to LED 燈">
-                        LED 燈
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-09-30T13:54:00+08:00"> Sat 30 September 2017</time>
-    </span>
-            <span class="label label-default">By</span>
-            <a href="./author/40423222.html"><i class="fa fa-user"></i> 40423222</a>
+            <article>
+                <h2><a href="./ComputerControl.html">電腦控制</a></h2>
+                <div class="summary"><p>參考Arduino快速紹手指南(Maik Schmidt)</p>
 
-
-
-<span class="label label-default">Tags</span>
-	<a href="./tag/arduino_part.html">Arduino_part</a>
-    
-</footer><!-- /.post-info -->                    </div>
+                    <a class="btn btn-default btn-xs" href="./ComputerControl.html">more ...</a>
                 </div>
-                <p>以下為LED的解說</p>
+            </article>
+            <hr/>
 
-
-<h3>LED零件:<br/></h3>
-<p><img src="./../data/LED/LED.png" width="300" /><br/></p>
-<h3>LED裝配方式:<br/></h3>
-<p><img src="./../data/LED/install.png" width="650" /><br/></p>
-<h3>要裝多少電阻:<br/></h3>
-<p>假設LED的正向電壓(forward voltage)為2V和正向電流(forward current)為20mA(0.02A),要知道LED這些數值,需查詢產品資料<br/>
-知道這些數值後利用,R = V / I   R = 電阻 , V = 電壓 , I = 電流<br/>
-2(V) / 0.02(A) = 150 (ohm)<br/>
-也就是要使用150Ω <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a></p>
-<p>Arduino Uno13腳位的LED有內設電阻,所以不需要接上電阻<br/>
-<img src="./../data/LED/Arduino pin13.png" width="450" /></p>
-<h3>參考網站:<br/></h3>
-<p>1.LED零件:
-<a href="https://zh.wikipedia.org/wiki/%E7%99%BC%E5%85%89%E4%BA%8C%E6%A5%B5%E7%AE%A1">https://zh.wikipedia.org/wiki/%E7%99%BC%E5%85%89%E4%BA%8C%E6%A5%B5%E7%AE%A1</a><br/>
-參考對象:
-<img src="./../data/LED/維基百科.png" width="150" /><br/></p>
-<p>2.LED裝配方式:
-<a href="https://www.youtube.com/watch?v=cWEJMusT-hI">https://www.youtube.com/watch?v=cWEJMusT-hI</a><br/>
-參考對象:
-<img src="./../data/LED/軟爛番茄.png" width="150" /><br/></p>
-<p>3.要裝多少電阻:<br/>
-<a href="https://www.youtube.com/watch?v=cWEJMusT-hI">https://www.youtube.com/watch?v=cWEJMusT-hI</a><br/>
-<a href="http://yehnan.blogspot.tw/2012/03/arduinoled220-ohm.html">http://yehnan.blogspot.tw/2012/03/arduinoled220-ohm.html</a><br/>
-參考對象:
-<img src="./../data/LED/軟爛番茄.png" width="150" />
-<img src="./../data/LED/葉難.png" width="150" /></p>
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
-
+        <ul class="pagination">
+                <li class="prev"><a href="./index.html">&laquo;</a>
+                </li>
+                    <li class=""><a
+                            href="./index.html">1</a></li>
+                    <li class="active"><a
+                            href="./index2.html">2</a></li>
+                <li class="next disabled"><a href="#">&raquo;</a></li>
+        </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
