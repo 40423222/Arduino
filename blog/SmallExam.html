@@ -2,8 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Search - 2017Spring 協同產品設計實習 (虎尾科大MDE)
-</title>
+    <title>SmallExam 電子學小考 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,15 +10,21 @@
 
 
 
+<link rel="canonical" href="./SmallExam.html">
 
-        <meta name="author" content="KMOL" />
+        <meta name="author" content="40423222" />
+        <meta name="keywords" content="電子學" />
+        <meta name="description" content="以下為電子實習的exam" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (虎尾科大MDE)" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="2017Spring 協同產品設計實習 (虎尾科大MDE)"/>
-        <meta property="og:url" content="."/>
-        <meta property="og:description" content="2017Spring 協同產品設計實習 (虎尾科大MDE)"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="SmallExam 電子學小考"/>
+        <meta property="og:url" content="./SmallExam.html"/>
+        <meta property="og:description" content="以下為電子實習的exam"/>
+        <meta property="article:published_time" content="2017-09-30" />
+            <meta property="article:section" content="Arduino" />
+            <meta property="article:tag" content="電子學" />
+            <meta property="article:author" content="40423222" />
 
 
     <!-- Bootstrap -->
@@ -100,7 +105,7 @@
                          <li><a href="./pages/about/">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="./category/arduino.html">Arduino</a>
                         </li>
             </ul>
@@ -122,7 +127,150 @@
     <div class="row">
         <div class="col-sm-9">
 
-<div id="tipue_search_content"></div>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./SmallExam.html"
+                       rel="bookmark"
+                       title="Permalink to SmallExam 電子學小考">
+                        SmallExam 電子學小考
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-09-30T14:49:00+08:00"> Sat 30 September 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40423222.html"><i class="fa fa-user"></i> 40423222</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/dian-zi-xue.html">電子學</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>以下為電子實習的exam</p>
+
+
+<h3>需要材料:</h3>
+<p>Wire: n個<br/>
+<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html">Button</a>: 一個<br/>
+330Ω <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a>: 五個<br/>
+1kΩ <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a>: 一個<br/>
+10kΩ <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a>: 一個<br/>
+<a href="https://40423222.github.io/2017springcd_hw/blog/Potentiometer.html">Potentiometer</a>: 一個(不限電駔大小)<br/>
+NPN 9013: 一個<br>
+<a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html">Arduino Uno</a>: 一個<br/>
+<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html">LED</a>: 五個<br/>
+Breadboard: 一個
+DC Motor: 一個</p>
+<h3>電路圖(Circuit diagram)</h3>
+<p><img src="./../data/small exam/levelMotor.png" width="800" /></p>
+<h3>程式碼(Code)</h3>
+<pre class="brush: python">
+int potenPin = A0; // 可變電阻
+int buttonPin = 2; // 按鈕
+int ledPins [] {3, 4, 5, 6, 7}; // led燈
+int motorPin = 9; // 馬達
+// 六段變速 100/300/500/700/900/1000
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(potenPin, INPUT);
+  pinMode(buttonPin, INPUT);
+  for(int L = 0; L < 5; L++) {
+    pinMode(ledPins[L], OUTPUT);
+  }
+  pinMode(motorPin, OUTPUT);
+}
+
+void loop() {
+  int motorValue = analogRead(potenPin);
+  Serial.println(motorValue);
+  int bStop = digitalRead(buttonPin);
+  Serial.println(bStop); 
+  if (bStop == LOW) {
+  if (motorValue < 100) {
+    analogWrite(motorPin, 0);
+    for (int L = 0; L < 5; L++) {
+      digitalWrite(ledPins[L], LOW);
+    }
+  }
+  else if (motorValue < 300) {
+    analogWrite(motorPin, 300);
+    for (int L = 0; L < 1; L++) {
+      digitalWrite(ledPins[L], HIGH);
+    }
+    for (int L = 1; L < 5; L++) {
+      digitalWrite(ledPins[L], LOW);
+    }
+  }
+  else if (motorValue < 500) {
+    analogWrite(motorPin, 500);
+    for (int L = 0; L < 2; L++) {
+      digitalWrite(ledPins[L], HIGH);
+    }
+    for (int L = 2; L < 5; L++) {
+      digitalWrite(ledPins[L], LOW);
+    }
+  }
+  else if (motorValue < 700) {
+    analogWrite(motorPin, 700);
+    for (int L = 0; L < 3; L++) {
+      digitalWrite(ledPins[L], HIGH);
+    }
+    for (int L = 3; L < 5; L++) {
+      digitalWrite(ledPins[L], LOW);
+    }
+  }
+  else if (motorValue < 900) {
+    analogWrite(motorPin, 900);
+    for (int L = 0; L < 4; L++) {
+      digitalWrite(ledPins[L], HIGH);
+    }
+    for (int L = 4; L < 5; L++) {
+      digitalWrite(ledPins[L], LOW);
+    }
+  }
+  else if (900 < motorValue) {
+    analogWrite(motorPin, 1000);
+    for (int L = 0; L < 5; L++) {
+      digitalWrite(ledPins[L], HIGH);
+    }
+  }
+ }
+ else if (bStop == HIGH) {
+  for(int s = 0; s < 5; s++) {
+  digitalWrite(ledPins[s],LOW);
+  }
+  digitalWrite(motorPin,LOW);
+  delay(100);
+ }
+}
+</pre>
+
+<h3>影片(Video)</h3>
+<p><iframe src="https://player.vimeo.com/video/220175906" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/220175906">small exam</a> from <a href="https://vimeo.com/user57795652">40423222</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+<h3>參考網站:</h3>
+<p>levelMotor:
+<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-threeLevel_Motor.html">https://40423222.github.io/2017springcd_hw/blog/Arduino-threeLevel_Motor.html</a><br/>
+參考對象:
+<a href="https://40423222.github.io/2017springcd_hw/blog/">https://40423222.github.io/2017springcd_hw/blog/</a><br/>
+參考對象:
+<img src="./../data/Button/part/40423222.png" width="150" /><br/></p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -231,20 +379,5 @@
 <script src="./theme/js/respond.min.js"></script>
 
 
-    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <script type="text/javascript" src="./theme/tipuesearch/tipuesearch_set.js"></script>
-    <script type="text/javascript" src="./theme/tipuesearch/tipuesearch.min.js"></script>
-    <!-- 導入 local Tipue search 所需要的 tipuesearch_content.js -->
-    <script type="text/javascript" src="./tipuesearch_content.js"></script>
-    <script>
-    $(document).ready(function() {
-      $('#tipue_search_input').tipuesearch({
-        'mode' : 'static',
-        'show': 10,
-        'minimumLength': 2,
-        'newWindow': false
-      });
-    });
-    </script>
 </body>
 </html>
