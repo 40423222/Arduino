@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Button 按鈕控制 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
+    <title>Button 按鈕 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -14,13 +14,13 @@
 
         <meta name="author" content="40423222" />
         <meta name="keywords" content="Arduino" />
-        <meta name="description" content="以下為Arduino Uno板的Button實驗" />
+        <meta name="description" content="以下為Button的解說" />
 
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Button 按鈕控制"/>
+        <meta property="og:title" content="Button 按鈕"/>
         <meta property="og:url" content="./Button.html"/>
-        <meta property="og:description" content="以下為Arduino Uno板的Button實驗"/>
+        <meta property="og:description" content="以下為Button的解說"/>
         <meta property="article:published_time" content="2017-09-30" />
             <meta property="article:section" content="Arduino" />
             <meta property="article:tag" content="Arduino" />
@@ -133,8 +133,8 @@
                 <h1>
                     <a href="./Button.html"
                        rel="bookmark"
-                       title="Permalink to Button 按鈕控制">
-                        Button 按鈕控制
+                       title="Permalink to Button 按鈕">
+                        Button 按鈕
                     </a>
                 </h1>
             </header>
@@ -144,7 +144,7 @@
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-09-30T13:26:00+08:00"> Sat 30 September 2017</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-09-30T13:57:00+08:00"> Sat 30 September 2017</time>
     </span>
             <span class="label label-default">By</span>
             <a href="./author/40423222.html"><i class="fa fa-user"></i> 40423222</a>
@@ -156,51 +156,41 @@
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>以下為Arduino Uno板的Button實驗</p>
+                <p>以下為Button的解說</p>
 
 
-<h3>需要材料:</h3>
-<p>Wire: n個<br/>
-10kΩ <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a>: 一個<br/>
-<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html">Button</a>: 一個<br/>
-<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html">LED</a>: 一個<br/>
-<a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html">Arduino Uno</a>: 一個</p>
-<h3>電路圖(Circuit diagram)</h3>
-<p><img src="./../data/Button/Circuit diagram.png" width="480" /></p>
-<h3>程式碼(Code)</h3>
-<pre class="brush: python">
-const int buttonPin = 2; //不知為何要在前方打上const
-//2腳位連結到按鈕
-const int ledPin = 13;
-//13腳位連結到
-int buttonState = 0;
-//宣告buttonState等於0
-
-void setup() {
-  pinMode(buttonPin,INPUT);
-  //將2腳位設定為輸入,也就是接收
-  pinMode(ledPin,OUTPUT);
-}
-
-void loop() {
-  buttonState = digitalRead(buttonPin);
-  //讀取buttonPin接收的訊號,以buttonState表示
-  if (buttonState == HIGH) {
-    //如果buttonState等於HIGH,就執行下方指令
-    digitalWrite(ledPin, HIGH); 
-  }
-  //如果buttonState不等於HIGH,就執行下方指令
-  else {
-    digitalWrite(ledPin, LOW);
-  }
-}
-</pre>
-
-<h3>參考網站:</h3>
-<p>Lad2 Button:
-<a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab2-led.html">http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab2-led.html</a><br/>
+<h3>按鈕零件:<br/></h3>
+<p><img src="./../data/Button/part/button.png" width="450" /><br/></p>
+<h3>按鈕功用:<br/></h3>
+<p>1和2為接通狀態,3和4為接通狀態,但1和2跟3和4沒接通<br/>
+只有在按下按鈕時1和2跟3和4才會接通<br/>
+電路圖(Circuit diagram)<br/>
+<img src="./../data/Button/part/Circuit diagram.png" width="450" /><br/></p>
+<h3>Button裝備方式:</h3>
+<p>3.3V連接在B1,在不按下按鈕時,3.3V不會通道B3和B4,只會跟B2接通<br/>
+11腳位為接收訊號,在不按下時訊號為LOW,在按下時訊號為HIGH<br/>
+在B4接上電阻跟地線(GND),可保護11腳位不被雜訊干擾<br/>
+<img src="./../data/Button/part/install.png" width="450" /><br/></p>
+<h3>Arduino範例:<br/></h3>
+<p><img src="./../data/Button/part/example.png" width="450" /><br/>
+<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button.html">https://40423222.github.io/2017springcd_hw/blog/Arduino-Button.html</a></p>
+<h3>參考網站:<br/></h3>
+<p>1.按鈕零件:
+<a href="https://tw.bid.yahoo.com/item/6-6-5MM%E5%BE%AE%E5%8B%95%E9%96%8B%E9%97%9C-%E8%BC%95%E8%A7%B8%E9%96%8B%E9%97%9C-%E6%8C%89%E9%8D%B5%E9%96%8B%E9%97%9C-%E8%87%A5%E5%BC%8F-%E9%8A%85%E8%85%B3-200%E5%80%8B%E4%B8%80-100035665893">https://tw.bid.yahoo.com/item/6-6-5MM%E5%BE%AE%E5%8B%95%E9%96%8B%E9%97%9C-%E8%BC%95%E8%A7%B8%E9%96%8B%E9%97%9C-%E6%8C%89%E9%8D%B5%E9%96%8B%E9%97%9C-%E8%87%A5%E5%BC%8F-%E9%8A%85%E8%85%B3-200%E5%80%8B%E4%B8%80-100035665893</a><br/>
 參考對象:
-<img src="./../data/參考對象/Cooper Maa.png" width="150" /></p>
+<img src="./../data/Button/part/yahoo.png" width="150" /><br/></p>
+<p>2.按鈕功用:
+<a href="https://tw.bid.yahoo.com/item/6-6-5MM%E5%BE%AE%E5%8B%95%E9%96%8B%E9%97%9C-%E8%BC%95%E8%A7%B8%E9%96%8B%E9%97%9C-%E6%8C%89%E9%8D%B5%E9%96%8B%E9%97%9C-%E8%87%A5%E5%BC%8F-%E9%8A%85%E8%85%B3-200%E5%80%8B%E4%B8%80-100035665893">https://tw.bid.yahoo.com/item/6-6-5MM%E5%BE%AE%E5%8B%95%E9%96%8B%E9%97%9C-%E8%BC%95%E8%A7%B8%E9%96%8B%E9%97%9C-%E6%8C%89%E9%8D%B5%E9%96%8B%E9%97%9C-%E8%87%A5%E5%BC%8F-%E9%8A%85%E8%85%B3-200%E5%80%8B%E4%B8%80-100035665893</a><br/>
+參考對象:
+<img src="./../data/Button/part/yahoo.png" width="150" /><br/></p>
+<p>3.button裝備方式:
+<a href="https://webduino.io/tutorials/tutorial-09-button-led.html">https://webduino.io/tutorials/tutorial-09-button-led.html</a><br/>
+參考對象:
+<img src="./../data/Button/part/Webduino.png" width="150" /><br/></p>
+<p>4.Arduino範例:
+<a href="https://40423222.github.io/2017springcd_hw/blog/">https://40423222.github.io/2017springcd_hw/blog/</a><br/>
+參考對象:
+<img src="./../data/Button/part/40423222.png" width="150" /><br/></p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -216,6 +206,16 @@ void loop() {
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="./Button.html">
+                            Button 按鈕
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./LED.html">
+                            LED 燈
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./Resistance.html">
                             Resistance 電組
                         </a>
@@ -228,16 +228,6 @@ void loop() {
                     <li class="list-group-item">
                         <a href="./Potentiometer.html">
                             Potentiometer 可變電組
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./Fade.html">
-                            Fade 呼吸燈
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./Button.html">
-                            Button 按鈕控制
                         </a>
                     </li>
                 </ul>

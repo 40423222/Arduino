@@ -52,6 +52,8 @@
 <v t="leo.20170930133618.1"><vh>@edit 可變電阻.md</vh></v>
 <v t="leo.20170930134243.1"><vh>@edit 三段直流馬達.md</vh></v>
 <v t="leo.20170930134754.1"><vh>@edit 電阻.md</vh></v>
+<v t="leo.20170930135316.1"><vh>@edit LED.md</vh></v>
+<v t="leo.20170930135325.1"><vh>@edit 按鈕.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>

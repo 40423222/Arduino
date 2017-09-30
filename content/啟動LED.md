@@ -2,7 +2,7 @@ Title: Blink 啟動LED
 Date: 2017-09-30 13:23
 Category: Arduino
 Tags: Arduino
-Slug: LED
+Slug: Blink
 Author: 40423222
 
 以下為Arduino Uno板的LED燈實驗
