@@ -5,41 +5,55 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-07-11T21:31:10-00:00</lastmod>
+<lastmod>2017-09-30T13:29:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-07-11T21:31:10-00:00</lastmod>
+<lastmod>2017-09-30T13:29:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-07-11T21:31:10-00:00</lastmod>
+<lastmod>2017-09-30T13:29:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-07-11T21:31:10-00:00</lastmod>
+<lastmod>2017-09-30T13:29:22-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2017-07-11T20:28:09+08:00</lastmod>
+<lastmod>2017-09-30T12:59:47+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./Arduino-computer control.html</loc>
+<loc>./Button.html</loc>
+<lastmod>2017-09-30T13:26:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./LED.html</loc>
+<lastmod>2017-09-30T13:23:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./ComputerControl.html</loc>
 <lastmod>2017-07-11T20:32:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -47,28 +61,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/arduino.html</loc>
-<lastmod>2017-07-11T20:32:00+08:06</lastmod>
+<lastmod>2017-09-30T13:26:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/arduino.html</loc>
-<lastmod>2017-07-11T20:32:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/notes.html</loc>
-<lastmod>2017-07-11T20:32:00+08:06</lastmod>
+<lastmod>2017-09-30T13:26:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/40423222.html</loc>
-<lastmod>2017-07-11T20:32:00+08:06</lastmod>
+<lastmod>2017-09-30T13:26:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

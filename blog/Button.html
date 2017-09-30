@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Categories - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
+    <title>Button 按鈕控制 - 2017Spring 協同產品設計實習 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,21 @@
 
 
 
+<link rel="canonical" href="./Button.html">
 
-        <meta name="author" content="KMOL" />
+        <meta name="author" content="40423222" />
+        <meta name="keywords" content="Arduino" />
+        <meta name="description" content="以下為Arduino Uno板的Button實驗" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (虎尾科大MDE)" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="2017Spring 協同產品設計實習 (虎尾科大MDE)"/>
-        <meta property="og:url" content="."/>
-        <meta property="og:description" content="2017Spring 協同產品設計實習 (虎尾科大MDE)"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Button 按鈕控制"/>
+        <meta property="og:url" content="./Button.html"/>
+        <meta property="og:description" content="以下為Arduino Uno板的Button實驗"/>
+        <meta property="article:published_time" content="2017-09-30" />
+            <meta property="article:section" content="Arduino" />
+            <meta property="article:tag" content="Arduino" />
+            <meta property="article:author" content="40423222" />
 
 
     <!-- Bootstrap -->
@@ -99,7 +105,7 @@
                          <li><a href="./pages/about/">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="./category/arduino.html">Arduino</a>
                         </li>
             </ul>
@@ -121,26 +127,85 @@
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="categories">
-        <h1>All Categories for 2017Spring 協同產品設計實習 (虎尾科大MDE)</h1>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-arduino">Arduino <span class="badge pull-right">3</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-arduino" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./Button.html"
+                       rel="bookmark"
+                       title="Permalink to Button 按鈕控制">
+                        Button 按鈕控制
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2017-09-30T13:26:00+08:00">Sat 30 September 2017</time></span> <a href="./Button.html">Button 按鈕控制</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2017-09-30T13:23:00+08:00">Sat 30 September 2017</time></span> <a href="./LED.html">Blink 啟動LED</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2017-07-11T20:32:00+08:00">Tue 11 July 2017</time></span> <a href="./ComputerControl.html">電腦控制</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-09-30T13:26:00+08:00"> Sat 30 September 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40423222.html"><i class="fa fa-user"></i> 40423222</a>
 
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/arduino.html">Arduino</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>以下為Arduino Uno板的Button實驗</p>
+
+
+<h3>需要材料:</h3>
+<p>Wire: n個<br/>
+10kΩ <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a>: 一個<br/>
+<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html">Button</a>: 一個<br/>
+<a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html">LED</a>: 一個<br/>
+<a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html">Arduino Uno</a>: 一個</p>
+<h3>電路圖(Circuit diagram)</h3>
+<p><img src="./../data/Button/Circuit diagram.png" width="480" /></p>
+<h3>程式碼(Code)</h3>
+<pre class="brush: python">
+const int buttonPin = 2; //不知為何要在前方打上const
+//2腳位連結到按鈕
+const int ledPin = 13;
+//13腳位連結到
+int buttonState = 0;
+//宣告buttonState等於0
+
+void setup() {
+  pinMode(buttonPin,INPUT);
+  //將2腳位設定為輸入,也就是接收
+  pinMode(ledPin,OUTPUT);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  //讀取buttonPin接收的訊號,以buttonState表示
+  if (buttonState == HIGH) {
+    //如果buttonState等於HIGH,就執行下方指令
+    digitalWrite(ledPin, HIGH); 
+  }
+  //如果buttonState不等於HIGH,就執行下方指令
+  else {
+    digitalWrite(ledPin, LOW);
+  }
+}
+</pre>
+
+<h3>參考網站:</h3>
+<p>Lad2 Button:
+<a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab2-led.html">http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab2-led.html</a><br/>
+參考對象:
+<img src="./../data/參考對象/Cooper Maa.png" width="150" /></p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>

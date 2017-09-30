@@ -1,8 +1,8 @@
 Title: 電腦控制
 Date: 2017-07-11 20:32
 Category: Arduino
-Tags: notes, Arduino
-Slug: Arduino-computer control
+Tags: Arduino
+Slug: ComputerControl
 Author: 40423222
 
 參考Arduino快速紹手指南(Maik Schmidt)
