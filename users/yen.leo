@@ -56,6 +56,8 @@
 <v t="leo.20170930135325.1"><vh>@edit 按鈕.md</vh></v>
 <v t="leo.20170930140534.1"><vh>@edit IC 7447.md</vh></v>
 <v t="leo.20170930140542.1"><vh>@edit 七段顯示器.md</vh></v>
+<v t="leo.20170930142118.1"><vh>@edit 連續啟動LED.md</vh></v>
+<v t="leo.20170930142126.1"><vh>@edit 啟動喇叭.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
