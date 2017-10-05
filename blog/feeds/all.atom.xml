@@ -9,15 +9,15 @@
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個
 &lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html"&gt;Button&lt;/a&gt;: 一個
+&lt;a href="https://40423222.github.io/Arduino/blog/Button.html"&gt;Button&lt;/a&gt;: 一個
 &lt;br/&gt;
-220Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個
+220Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個
 &lt;br/&gt;
-10kΩ &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個
+10kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個
 &lt;br/&gt;
-500Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)
+500Ω &lt;a href="https://40423222.github.io/Arduino/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)
 &lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 一個
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個
 &lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個
 &lt;br/&gt;
@@ -102,14 +102,14 @@ state為HIGH 或 LOW,以attachlnterrupt控制帶入void blink公式
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html"&gt;Button&lt;/a&gt;: 一個&lt;br/&gt;
-330Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 五個&lt;br/&gt;
-1kΩ &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
-10kΩ &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Button.html"&gt;Button&lt;/a&gt;: 一個&lt;br/&gt;
+330Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 五個&lt;br/&gt;
+1kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
+10kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
 NPN 9013: 一個&lt;br&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 五個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 五個&lt;br/&gt;
 Breadboard: 一個
 DC Motor: 一個&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
@@ -211,7 +211,7 @@ void loop() {
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-10kΩ &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
+10kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
 LDR: 一個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br/&gt;
 Breadboard: 一個&lt;/p&gt;
@@ -255,7 +255,7 @@ void loop() {
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-330Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 八個&lt;br/&gt;
+330Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 八個&lt;br/&gt;
 L-Seven-segment display: 一個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br/&gt;
 Breadboard: 一個&lt;/p&gt;
@@ -457,8 +457,8 @@ void loop() {
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-330Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 六個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 六個&lt;br/&gt;
+330Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 六個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 六個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br/&gt;
 Breadboard: 一個&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
@@ -512,7 +512,7 @@ void loop() {
 &lt;p&gt;&lt;img src="./../data/H-Seven-segment display/part/Seven-segment display.png" width="450" /&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;h3&gt;H-Seven-segment display裝配方式:&lt;br/&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src="./../data/H-Seven-segment display/part/install.png" width="200" /&gt;&lt;br/&gt;
-連接&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-IC 7447-part.html"&gt;IC 7447&lt;/a&gt;&lt;br/&gt;
+連接&lt;a href="https://40423222.github.io/Arduino/blog/IC%207447.html"&gt;IC 7447&lt;/a&gt;&lt;br/&gt;
 加上電阻以防顯示器燒壞&lt;br/&gt;
 &lt;img src="./../data/H-Seven-segment display/part/install-IC 7447.png" width="450" /&gt;&lt;br/&gt;&lt;/p&gt;
 &lt;h3&gt;H-Seven-segment display功用:&lt;/h3&gt;
@@ -586,7 +586,7 @@ IC 7448才能使用在陰性七段顯示器上&lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;假設LED的正向電壓(forward voltage)為2V和正向電流(forward current)為20mA(0.02A),要知道LED這些數值,需查詢產品資料&lt;br/&gt;
 知道這些數值後利用,R = V / I   R = 電阻 , V = 電壓 , I = 電流&lt;br/&gt;
 2(V) / 0.02(A) = 150 (ohm)&lt;br/&gt;
-也就是要使用150Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;&lt;/p&gt;
+也就是要使用150Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Arduino Uno13腳位的LED有內設電阻,所以不需要接上電阻&lt;br/&gt;
 &lt;img src="./../data/LED/Arduino pin13.png" width="450" /&gt;&lt;/p&gt;
 &lt;h3&gt;參考網站:&lt;br/&gt;&lt;/h3&gt;
@@ -648,13 +648,13 @@ IC 7448才能使用在陰性七段顯示器上&lt;br/&gt;&lt;/p&gt;
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html"&gt;Button&lt;/a&gt;: 兩個&lt;br/&gt;
-330Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 九個&lt;br/&gt;
-10kΩ &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 兩個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 三個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-IC 7447-part.html"&gt;IC 7447&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-H-Seven-segment display-part.html"&gt;H-Seven-segment display&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Button.html"&gt;Button&lt;/a&gt;: 兩個&lt;br/&gt;
+330Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 九個&lt;br/&gt;
+10kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 兩個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 三個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/IC%207447.html"&gt;IC 7447&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/H_SevenSegmentDisplay.html"&gt;H-Seven-segment display&lt;/a&gt;: 一個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br/&gt;
 Breadboard: 兩個&lt;br/&gt;
 DC Motor: 一個&lt;/p&gt;
@@ -773,9 +773,9 @@ void loop() {
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-330Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
+330Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
 &lt;p&gt;&lt;img src="./../data/Potentiometer/Circuit diagram.png" width="480" /&gt;&lt;/p&gt;
@@ -809,8 +809,8 @@ void loop() {
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-330Ω &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
+330Ω &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
 &lt;p&gt;&lt;img src="./../data/Fade/Circuit diagram.png" width="480" /&gt;&lt;/p&gt;
@@ -850,9 +850,9 @@ void loop() {
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
 &lt;p&gt;Wire: n個&lt;br/&gt;
-10kΩ &lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Button-part.html"&gt;Button&lt;/a&gt;: 一個&lt;br/&gt;
-&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
+10kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Button.html"&gt;Button&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
 &lt;p&gt;&lt;img src="./../data/Button/Circuit diagram.png" width="480" /&gt;&lt;/p&gt;
@@ -893,7 +893,7 @@ void loop() {
 
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
+&lt;p&gt;&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
 &lt;p&gt;&lt;img src="./../data/Blink/Circuit diagram.png" width="480" /&gt;&lt;/p&gt;
@@ -925,7 +925,7 @@ void loop() {
 &lt;hr&gt;
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-LED.html"&gt;LED&lt;/a&gt;: 一個
+&lt;p&gt;&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個
 &lt;br&gt; 
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
 &lt;hr&gt;

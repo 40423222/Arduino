@@ -23,7 +23,7 @@ Author: 40423222
 假設LED的正向電壓(forward voltage)為2V和正向電流(forward current)為20mA(0.02A),要知道LED這些數值,需查詢產品資料<br/>
 知道這些數值後利用,R = V / I   R = 電阻 , V = 電壓 , I = 電流<br/>
 2(V) / 0.02(A) = 150 (ohm)<br/>
-也就是要使用150Ω <a href="https://40423222.github.io/2017springcd_hw/blog/Arduino-Resistance.html">Resistor</a>
+也就是要使用150Ω <a href="https://40423222.github.io/Arduino/blog/Resistance.html">Resistor</a>
 
 Arduino Uno13腳位的LED有內設電阻,所以不需要接上電阻<br/>
 <img src="./../data/LED/Arduino pin13.png" width="450" />
