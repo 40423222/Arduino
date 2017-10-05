@@ -63,7 +63,7 @@
 <v t="leo.20170930143337.1"><vh>@edit 電子學小考.md</vh></v>
 <v t="leo.20170930151928.1"><vh>@edit 可變電阻.md</vh></v>
 <v t="leo.20170930151934.1"><vh>@edit 電子學期末報告.md</vh></v>
-<v t="yen.20170108171733.81"><vh>@path pages</vh>
+<v t="yen.20170108171733.81" a="E"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
 </v>
