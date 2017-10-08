@@ -1,7 +1,31 @@
 Title: About
 
-## 2017/10/05
+<hr>
 
-### 參考網站:
+### Python:
+<a href="https://40423222.github.io/Python/blog">https://40423222.github.io/Python/blog</a>
 
-各種範例: <a href="http://coopermaa2nd.blogspot.tw/2011/01/arduino-lab16.html">http://coopermaa2nd.blogspot.tw/2011/01/arduino-lab16.html</a>
+<hr>
+
+### Arduino:
+<a href="https://40423222.github.io/Arduino/blog">https://40423222.github.io/Arduino/blog</a>
+
+<hr>
+
+### Gripper:
+<a href="https://40423222.github.io/Gripper/blog">https://40423222.github.io/Gripper/blog</a>
+
+<hr>
+
+### Unlock:
+<a href="https://40423222.github.io/Unlock/blog">https://40423222.github.io/Unlock/blog</a>
+
+<hr>
+
+### HTML:
+<a href="https://40423222.github.io/HTML/blog">https://40423222.github.io/HTML/blog</a>
+
+<hr>
+
+### HexadecimalColorTable:
+<a herf="https://40423222.github.io/HexadecimalColorTable/blog">https://40423222.github.io/HexadecimalColorTable/blog</a>
