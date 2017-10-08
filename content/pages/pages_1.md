@@ -28,4 +28,4 @@ Title: About
 <hr>
 
 ### HexadecimalColorTable:
-<a herf="https://40423222.github.io/HexadecimalColorTable/blog">https://40423222.github.io/HexadecimalColorTable/blog</a>
+<a href="https://40423222.github.io/HexadecimalColorTable/blog">https://40423222.github.io/HexadecimalColorTable/blog</a>
