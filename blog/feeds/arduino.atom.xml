@@ -1,5 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/arduino.atom.xml" rel="self"></link><id>./</id><updated>2017-09-30T15:23:00+08:00</updated><entry><title>FinalReport 電子學期末報告</title><link href="./FinalReport.html" rel="alternate"></link><published>2017-09-30T15:23:00+08:00</published><updated>2017-09-30T15:23:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-09-30:./FinalReport.html</id><summary type="html">&lt;p&gt;以下為電子實習的Final report&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/arduino.atom.xml" rel="self"></link><id>./</id><updated>2017-10-24T19:22:00+08:00</updated><entry><title>Vin 外部供電</title><link href="./Vin.html" rel="alternate"></link><published>2017-10-24T19:22:00+08:00</published><updated>2017-10-24T19:22:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-10-24:./Vin.html</id><summary type="html">&lt;p&gt;以下為Arduino Uno板的Vin實驗&lt;/p&gt;
+
+
+&lt;h3&gt;需要材料:&lt;/h3&gt;
+&lt;p&gt;Wire: n個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 一個&lt;br/&gt;
+battery: 四個&lt;br/&gt;
+ServoMotor: 一個&lt;br/&gt;
+&lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
+&lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
+&lt;p&gt;注意: 電池要串聯&lt;br&gt;
+&lt;img src="./../data/Vin/Circuit diagram.png" width="480" /&gt;&lt;/p&gt;
+&lt;h3&gt;程式碼(Code)&lt;/h3&gt;
+&lt;p&gt;自動控制伺服馬達&lt;br&gt;&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+void setup() {
+  // 13腳輸出電給LED
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);   // 通電
+  delay(1000);              // 持續1秒
+  digitalWrite(13, LOW);    // 斷電
+  delay(1000);              // 持續1秒
+}
+&lt;/pre&gt;
+
+&lt;h3&gt;參考網站:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab1-blinking-led.html"&gt;http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab1-blinking-led.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://pizgchen.blogspot.tw/2014/03/arduinovin-pin12v.html"&gt;http://pizgchen.blogspot.tw/2014/03/arduinovin-pin12v.html&lt;/a&gt;&lt;br&gt;
+參考對象:
+&lt;img src="./../data/參考對象/Cooper Maa.png" width="150" /&gt;
+&lt;img src="./../data/參考對象/blogspot.png" width="40" /&gt;&lt;/p&gt;</summary><category term="Arduino"></category></entry><entry><title>ControlServoMotor 控制伺服馬達</title><link href="./ControlServoMotor.html" rel="alternate"></link><published>2017-10-24T18:46:00+08:00</published><updated>2017-10-24T18:46:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-10-24:./ControlServoMotor.html</id><summary type="html">&lt;p&gt;以下為Arduino Uno板的ControlServoMotor實驗&lt;/p&gt;
+
+
+&lt;h3&gt;需要材料:&lt;/h3&gt;
+&lt;p&gt;Wire: n個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Potentiometer.html"&gt;Potentiometer&lt;/a&gt;: 一個(不限電駔大小)&lt;br/&gt;
+ServoMotor: 一個&lt;br/&gt;
+&lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;/p&gt;
+&lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/ControlServoMotor/Circuit diagram.png" width="480" /&gt;&lt;/p&gt;
+&lt;h3&gt;程式碼(Code)&lt;/h3&gt;
+&lt;p&gt;自動控制伺服馬達&lt;br&gt;&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+// 引用 Servo Library
+#include &lt;Servo.h&gt;
+
+// 建立一個 Servo 物件
+Servo myservo;
+// 旋轉角度
+int value = 0;
+
+void setup() 
+{ 
+  myservo.attach(9);  // Servo 接在 pin 9
+} 
+
+void loop() 
+{ 
+  if (value == 0) 
+    value = 180;
+  else
+    value = 0;
+
+  // 叫 Servo 旋轉角度:
+  //    myservo.write(0) 是叫 Servo 旋轉到 0 度的位置
+  //    myservo.write(180) 是叫 Servo 旋轉到 180 度的位置
+  myservo.write(value); 
+  delay(1500);
+} 
+&lt;/pre&gt;
+
+&lt;p&gt;可變電阻控制伺服馬達&lt;br&gt;&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+// 使用可變電阻控制 Servo 的旋轉角度
+// by Michal Rinott &lt;http://people.interaction-ivrea.it/m.rinott&gt;
+
+// 引用 Servo Library
+#include &lt;Servo.h&gt; 
+
+// 建立一個 Servo 物件 
+Servo myservo; 
+
+// 可變電阻接在 Analog pin 0 
+int potpin = 0;
+// 儲存旋轉角度的變數
+int val;
+
+void setup() 
+{ 
+  myservo.attach(9);  // Servo 接在 pin 9
+} 
+
+void loop() 
+{ 
+  val = analogRead(potpin);            // 讀取可變電阻(數值介於 0 到 1023)
+  val = map(val, 0, 1023, 0, 179);     // 把 0 - 1023 的數值按比例縮放為 0 - 180 的數值
+  myservo.write(val);                  // 設定 Servo 旋轉角度
+  delay(15);                           // 等待 Servo 旋轉指定的位置
+} 
+&lt;/pre&gt;
+
+&lt;h3&gt;參考網站:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://coopermaa2nd.blogspot.tw/2011/01/arduino-lab16.html"&gt;http://coopermaa2nd.blogspot.tw/2011/01/arduino-lab16.html&lt;/a&gt;&lt;br/&gt;
+參考對象:
+&lt;img src="./../data/參考對象/Cooper Maa.png" width="150" /&gt;&lt;/p&gt;</summary><category term="Arduino"></category></entry><entry><title>FinalReport 電子學期末報告</title><link href="./FinalReport.html" rel="alternate"></link><published>2017-09-30T15:23:00+08:00</published><updated>2017-09-30T15:23:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-09-30:./FinalReport.html</id><summary type="html">&lt;p&gt;以下為電子實習的Final report&lt;/p&gt;
 
 
 &lt;h3&gt;Final report&lt;/h3&gt;
