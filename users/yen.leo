@@ -45,7 +45,7 @@
 </v>
 </v>
 <v t="yen.20170108171733.71" a="E"><vh>@path content</vh>
-<v t="leo.20171024190656.1" a="E"><vh>@path 操作範例</vh>
+<v t="leo.20171024190656.1"><vh>@path 操作範例</vh>
 <v t="leo.20171024190604.1"><vh>@edit computer control.md</vh></v>
 <v t="leo.20170930131633.1"><vh>@edit 啟動LED.md</vh></v>
 <v t="leo.20170930132614.1"><vh>@edit 按鈕控制.md</vh></v>
@@ -59,14 +59,17 @@
 <v t="leo.20171024184118.1"><vh>@edit 伺服馬達.md</vh></v>
 <v t="leo.20171024191804.1"><vh>@edit 外部電源.md</vh></v>
 <v t="leo.20171030012102.1"><vh>@edit 顯示接收的紅外線.md</vh></v>
+<v t="leo.20171203152023.1"><vh>@edit L298N馬達控制板.md</vh></v>
 </v>
-<v t="leo.20170710222251.1"><vh>@path 零件說明</vh>
+<v t="leo.20170710222251.1" a="E"><vh>@path 零件說明</vh>
 <v t="leo.20170930134754.1"><vh>@edit 電阻.md</vh></v>
 <v t="leo.20170930135316.1"><vh>@edit LED.md</vh></v>
 <v t="leo.20170930135325.1"><vh>@edit 按鈕.md</vh></v>
 <v t="leo.20170930140534.1"><vh>@edit IC 7447.md</vh></v>
 <v t="leo.20170930140542.1"><vh>@edit 七段顯示器.md</vh></v>
 <v t="leo.20170930151928.1"><vh>@edit 可變電阻.md</vh></v>
+<v t="leo.20171203172925.1"><vh>@edit L298N.md</vh></v>
+<v t="leo.20171203210614.1"><vh>@edit 9V外接電源.md</vh></v>
 </v>
 <v t="leo.20171024191049.1"><vh>@path 電子學</vh>
 <v t="leo.20170930143337.1"><vh>@edit 電子學小考.md</vh></v>

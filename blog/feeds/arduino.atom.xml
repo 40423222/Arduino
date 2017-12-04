@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/arduino.atom.xml" rel="self"></link><id>./</id><updated>2017-10-30T01:23:00+08:00</updated><entry><title>InfraredType 顯示接收的紅外線</title><link href="./InfraredType.html" rel="alternate"></link><published>2017-10-30T01:23:00+08:00</published><updated>2017-10-30T01:23:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-10-30:./InfraredType.html</id><summary type="html">&lt;p&gt;以下為Arduino Uno板的InfraredType實驗&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/arduino.atom.xml" rel="self"></link><id>./</id><updated>2017-12-04T15:36:00+08:00</updated><entry><title>9V_BatteryAdapter 9V外接電源</title><link href="./9V_BatteryAdapter.html" rel="alternate"></link><published>2017-12-04T15:36:00+08:00</published><updated>2017-12-04T15:36:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-12-04:./9V_BatteryAdapter.html</id><summary type="html">&lt;p&gt;以下為9V_BatteryAdapter的解說&lt;/p&gt;
+
+
+&lt;h3&gt;9V_BatteryAdapter零件:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/9V_BatteryAdapter/9V_BatteryAdapter.png" width="300" /&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;9V_BatteryAdapter裝配方式:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/9V_BatteryAdapter/裝配方式.png" width="650" /&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;參考網站:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.high-altitude-balloon.com/Arduino-9V-Battery"&gt;http://www.high-altitude-balloon.com/Arduino-9V-Battery&lt;/a&gt;&lt;br/&gt;
+&lt;a href="https://www.geeetech.com/9v5v-battery-adapter-for-arduino-p-23.html"&gt;https://www.geeetech.com/9v5v-battery-adapter-for-arduino-p-23.html&lt;/a&gt;&lt;/p&gt;</summary><category term="Arduino_part"></category></entry><entry><title>L298N 雙直流馬達正反轉</title><link href="./L298N.html" rel="alternate"></link><published>2017-12-03T17:31:00+08:00</published><updated>2017-12-03T17:31:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-12-03:./L298N.html</id><summary type="html">&lt;p&gt;以下為L298N的解說&lt;/p&gt;
+
+
+&lt;h3&gt;L298N零件:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/L298N/L298N.png" width="300" /&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;Potentiometer裝配方式:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/L298N/裝配方式.png" width="650" /&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;運作原理:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;4跟5和6跟7分別控制A1跟A2和B1跟B2,下圖有完整操作資料
+&lt;br&gt;
+&lt;img src="./../data/L298N/運作原理.png" width="700" /&gt;&lt;/p&gt;
+&lt;h3&gt;參考網站:&lt;br/&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://goods.ruten.com.tw/item/show?21401288480536"&gt;http://goods.ruten.com.tw/item/show?21401288480536&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://designer.mech.yzu.edu.tw/articlesystem/article/compressedfile/(2013-02-18)%20%E4%BD%BF%E7%94%A8%E9%A6%AC%E9%81%94%E9%A9%85%E5%8B%95IC%E6%90%AD%E9%85%8DArduino%20Uno%E6%8E%A7%E5%88%B6%E9%A6%AC%E9%81%94%E8%BC%B8%E5%87%BA.aspx?ArchID=2006"&gt;http://designer.mech.yzu.edu.tw/articlesystem/article/compressedfile/(2013-02-18)%20%E4%BD%BF%E7%94%A8%E9%A6%AC%E9%81%94%E9%A9%85%E5%8B%95IC%E6%90%AD%E9%85%8DArduino%20Uno%E6%8E%A7%E5%88%B6%E9%A6%AC%E9%81%94%E8%BC%B8%E5%87%BA.aspx?ArchID=2006&lt;/a&gt;&lt;/p&gt;</summary><category term="Arduino_part"></category></entry><entry><title>L298N 馬達控制板</title><link href="./L298NControl.html" rel="alternate"></link><published>2017-12-03T15:03:00+08:00</published><updated>2017-12-03T15:03:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-12-03:./L298NControl.html</id><summary type="html">&lt;p&gt;以下為Arduino Uno板的L298實驗&lt;/p&gt;
+
+
+&lt;h3&gt;需要材料:&lt;/h3&gt;
+&lt;p&gt;Wire: n個&lt;br/&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/Button.html"&gt;Button&lt;/a&gt;: 兩個&lt;br/&gt;
+10kΩ &lt;a href="https://40423222.github.io/Arduino/blog/Resistance.html"&gt;Resistor&lt;/a&gt;: 兩個&lt;br/&gt;
+12Vbattery: 1個&lt;br&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/9V_BatteryAdapter.html"&gt;9V_BatteryAdapter&lt;/a&gt;: 1個(提供電力給Arduino Uno)&lt;br&gt;
+DC Motor: 兩個&lt;br&gt;
+&lt;a href="https://40423222.github.io/Arduino/blog/L298N.html"&gt;L298N&lt;/a&gt;: 一個&lt;br&gt;
+&lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br&gt;
+Breadboard: 一個&lt;/p&gt;
+&lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
+&lt;p&gt;&lt;img src="./../data/L298N/Circuit diagram.png" width="600" /&gt;&lt;/p&gt;
+&lt;h3&gt;程式碼(Code)&lt;/h3&gt;
+&lt;pre class="brush: python"&gt;
+const int buttonGo = 2; //前進
+const int buttonBack = 3; //後退
+int Go = 0; //定義Go,為了要讀取buttonGo
+int Back = 0; //定義Back,為了要讀取buttonBack
+
+int AmotorA = 4; //控制正反轉
+int AmotorB = 5; //控制正反轉
+
+int BmotorA = 6; //控制正反轉
+int BmotorB = 7; //控制正反轉
+
+void setup() {
+  pinMode(buttonGo, INPUT);
+  pinMode(buttonBack, INPUT);
+}
+
+void loop() {
+  Go = digitalRead(buttonGo);
+  Back = digitalRead(buttonBack);
+
+  if (Go == HIGH) {
+    digitalWrite(AmotorA, HIGH);
+    digitalWrite(AmotorB, LOW);
+    digitalWrite(BmotorA, HIGH);
+    digitalWrite(BmotorB, LOW);
+  }
+  else {
+    digitalWrite(AmotorA, LOW);
+    digitalWrite(AmotorB, LOW);
+    digitalWrite(BmotorA, LOW);
+    digitalWrite(BmotorB, LOW);
+  }
+
+  if (Back == HIGH) {
+    digitalWrite(AmotorA, LOW);
+    digitalWrite(AmotorB, HIGH);
+    digitalWrite(BmotorA, LOW);
+    digitalWrite(BmotorB, HIGH);
+  }
+  else {
+    digitalWrite(AmotorA, LOW);
+    digitalWrite(AmotorB, LOW);
+    digitalWrite(BmotorA, LOW);
+    digitalWrite(BmotorB, LOW); 
+  }
+}
+&lt;/pre&gt;
+
+&lt;h3&gt;顯示結果:&lt;/h3&gt;
+&lt;p&gt;說明: 當按住其中一個按鈕(2=H or 3=H)&lt;br&gt;
+&lt;img src="./../data/L298N/結果.png" width="700" /&gt;&lt;/p&gt;
+&lt;h3&gt;參考網站:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://goods.ruten.com.tw/item/show?21401288480536"&gt;http://goods.ruten.com.tw/item/show?21401288480536&lt;/a&gt;&lt;br/&gt;
+&lt;a href="http://designer.mech.yzu.edu.tw/articlesystem/article/compressedfile/(2013-02-18)%20%E4%BD%BF%E7%94%A8%E9%A6%AC%E9%81%94%E9%A9%85%E5%8B%95IC%E6%90%AD%E9%85%8DArduino%20Uno%E6%8E%A7%E5%88%B6%E9%A6%AC%E9%81%94%E8%BC%B8%E5%87%BA.aspx?ArchID=2006"&gt;http://designer.mech.yzu.edu.tw/articlesystem/article/compressedfile/(2013-02-18)%20%E4%BD%BF%E7%94%A8%E9%A6%AC%E9%81%94%E9%A9%85%E5%8B%95IC%E6%90%AD%E9%85%8DArduino%20Uno%E6%8E%A7%E5%88%B6%E9%A6%AC%E9%81%94%E8%BC%B8%E5%87%BA.aspx?ArchID=2006&lt;/a&gt;&lt;/p&gt;</summary><category term="Arduino"></category></entry><entry><title>InfraredType 顯示接收的紅外線</title><link href="./InfraredType.html" rel="alternate"></link><published>2017-10-30T01:23:00+08:00</published><updated>2017-10-30T01:23:00+08:00</updated><author><name>40423222</name></author><id>tag:,2017-10-30:./InfraredType.html</id><summary type="html">&lt;p&gt;以下為Arduino Uno板的InfraredType實驗&lt;/p&gt;
 
 
 &lt;h3&gt;需要材料:&lt;/h3&gt;
@@ -832,9 +924,9 @@ IC 7448才能使用在陰性七段顯示器上&lt;br/&gt;&lt;/p&gt;
 &lt;a href="https://40423222.github.io/Arduino/blog/LED.html"&gt;LED&lt;/a&gt;: 三個&lt;br/&gt;
 &lt;a href="https://40423222.github.io/Arduino/blog/IC%207447.html"&gt;IC 7447&lt;/a&gt;: 一個&lt;br/&gt;
 &lt;a href="https://40423222.github.io/Arduino/blog/H_SevenSegmentDisplay.html"&gt;H-Seven-segment display&lt;/a&gt;: 一個&lt;br/&gt;
+DC Motor: 一個
 &lt;a href="http://coopermaa2nd.blogspot.tw/2011/05/arduino.html"&gt;Arduino Uno&lt;/a&gt;: 一個&lt;br/&gt;
-Breadboard: 兩個&lt;br/&gt;
-DC Motor: 一個&lt;/p&gt;
+Breadboard: 兩個&lt;br/&gt;&lt;/p&gt;
 &lt;h3&gt;電路圖(Circuit diagram)&lt;/h3&gt;
 &lt;p&gt;&lt;img src="./../data/ThreeLevel_cdMotor/Circuit diagram.png" width="800" /&gt;&lt;/p&gt;
 &lt;h3&gt;程式碼(Code)&lt;/h3&gt;
